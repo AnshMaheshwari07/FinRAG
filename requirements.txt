@@ -1,0 +1,19 @@
+langchain
+python-dotenv
+ipykernel
+langchain_community
+pypdf
+bs4
+python-dotenv
+langchain-openai
+sentence_transformers #in this the embedding technique is available
+langchain_huggingface
+streamlit
+langchain_groq
+fastapi
+uvicorn
+langserve
+pandas 
+tavily-python
+llama_parse
+langchain_mongodb

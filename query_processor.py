@@ -1,99 +1,96 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-from langchain_community.document_loaders import PyPDFLoader,WebBaseLoader,CSVLoader
 from langchain.agents import AgentExecutor,initialize_agent,AgentType
 from langchain.callbacks import StreamlitCallbackHandler ##for communicating with agents
 import os
 from dotenv import load_dotenv
 from pymongo import MongoClient
-
+from websearch import Search
+from langchain_mongodb import MongoDBAtlasVectorSearch
+from langchain.tools import Tool
+from yfinane import FinanceTool
+from langchain.callbacks.manager import CallbackManager
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+import json
+import pandas as pd
 load_dotenv()
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.document_loaders import WebBaseLoader
-from langchain.tools.retriever import create_retriever_tool
 
+llm = ChatGroq(
+    model="Gemma2-9b-It"
+    )
 os.environ['HUGGING_FACE_API_KEY']=os.getenv("HUGGING_FACE_API_KEY")
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+os.environ["TAVILY_API_KEY"]=os.getenv("TAVILY_API_KEY")
 
-MONGO_DB_STRING=os.getenv("MONGO_DB")
-client =MongoClient(MONGO_DB_STRING,tls=True, tlsAllowInvalidCertificates=True)
+client = MongoClient(os.getenv("uri"), server_api=ServerApi('1'))
 db = client["Financial_RAG"]
-collection=db["finlatics"]
+collection=db["vector_store_finance"]
 
-def make_using_pdf(uploaded_files):
-    if uploaded_files:
+search=MongoDBAtlasVectorSearch(collection=collection,embedding=embeddings)
 
-        temppdf=f"./temp.pdf"
-        with open(temppdf,"wb") as file:
-            file.write(uploaded_files.read())
-                
+finance_tool=FinanceTool()
 
-        loader=PyPDFLoader(temppdf)
-        docs=loader.load()
-      
-# Split and create embeddings for the documents
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=5000, chunk_overlap=500)
-        splits = text_splitter.split_documents(docs)
-        
-        for doc in splits:
-            chunk_text=doc.page_content
-            embedding_vector=embeddings.embed_query(chunk_text)
-
-            collection.insert_one({"text":chunk_text,"embedding":embedding_vector.tolist()})
-        os.remove(temppdf)
+def rag_tool(query:str)->str:
+    ##your vector search logic here
+    retriever=search.as_retriever(search_kwargs={'k':2})
+    docs=retriever.get_relevant_documents(query)
+    return "\n\n".join(doc["content"] for doc in docs)
 
 
 
+tools=[
+    Tool(
+        name="Web search",
+        func=Search.tavily,
+        description="Perform a real-time web search using Tavily and give latest updates."
+    ),
+    Tool(
+        name="Yahoo Finance",
+        func=finance_tool.get_stock_data,
+        description="Fetch historical stock data for a given ticker and date range"
+    ),
+    Tool(
+        name="RAG_Search",
+        func=rag_tool,
+        description="Retrieve related documents from MongoDB vector store"
+    )
+]
+
+# Create your handler
+streamlit_handler = StreamlitCallbackHandler(st)
+
+# Wrap it in a manager
+callback_manager = CallbackManager([streamlit_handler])
+
+agent=initialize_agent(
+    llm=llm,
+    tools=tools,
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    verbose=True,
+    callbacks=[streamlit_handler],
+    return_intermediate_steps=True,
+    max_iterations=3,
+)
 
 
-st.title("Chat with search on web")
+st.title("FinRAG")
+query = st.text_input("Ask me about stocks, markets, or trends")
 
-st.sidebar.title("Settings")
-api_key=st.sidebar.text_input("Enter your GROQ API Key",type="password")
+if st.button("Run"):
+    with st.spinner("Thinking..."):
+        response = agent({"input":query})
+    
 
-link=st.sidebar.text_input("Enter the link you want to crawl")
-if link:
-    retriever_Tool_link=make_embeddings_using_link(link)
-    tools.append(retriever_Tool_link)
-
-pdfload=st.sidebar.file_uploader("Enter the pdf you want to chat with (optional)",type="pdf", accept_multiple_files=False)
-
-
-if pdfload:
-    retriever_pdf=make_using_pdf(pdfload)
-    tools.append(retriever_pdf)
-    print("tools used are",tools)
-
-
-if "messages" not in st.session_state:
-  st.session_state["messages"]=[
-      {"role":"assistant","content":"Hii I am a chatbot who can search the web. How may I help you?"}
-  ]  
-
-for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
-
-if not api_key:
-    st.error("Please enter api key to continue")
-
-
-
-if prompt:=st.chat_input(placeholder="Write your question"):
-    st.session_state.messages.append({"role":"user","content":prompt})
-    st.chat_message("user").write(prompt)
-
-    llm=ChatGroq(groq_api_key=api_key,model="Llama3-8b-8192",streaming=True)
-    search_agent=initialize_agent(tools,llm,agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION
-                            ,handle_parsing_errors=True,verbose=True)
-
-
-    with st.chat_message("assistant"):
-        st_cb=StreamlitCallbackHandler(st.container(),expand_new_thoughts=False)
-        response=search_agent.run(st.session_state.messages,callbacks=[st_cb])
-        st.session_state.messages.append({"role": "assistant", "content": response})
-        st.write(response)
-
-
-
+    st.markdown("Chain of thought:")
+    for idx,(action,obs) in enumerate(response["intermediate_steps"]):
+       ## st.markdown(f"step {idx+1}")
+        st.write(f"Thought: {action.log}")
+        st.write(f"Action: {action.tool}")
+        st.write(f"Extracted params: {action.tool_input}")
+        st.write(f"Observation: {obs}")
+        st.write(" --- ")
+    st.markdown("## Final Answer")
+    st.write(response["output"])

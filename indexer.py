@@ -8,6 +8,9 @@ from llama_parse import LlamaParse
 from pymongo import MongoClient
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from langchain_huggingface import HuggingFaceEmbeddings
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+
 # only these filetypes will be allowed to parsed
 allowed_filetypes = ['pdf', 'doc', 'docx', 'txt', 'xlsx', 'csv', 'ppt', 'pptx', 'md']
 
@@ -59,8 +62,6 @@ if not os.getenv("uri"):
     raise RuntimeError("MongoDB API Key not found. Check .env file.")
 
 
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
 
 
 # Create a new client and connect to the server
@@ -107,3 +108,15 @@ for filename in os.listdir(data_directory):
 
 
     
+
+"""
+basically thinking to route b/w four tasks
+1 going to db
+2 going to yahoofinance
+
+3 going to web search
+4 if possible try to make plots or diagram using code execution
+
+llm-gemini 2.0
+tools=[yf,ws]
+"""

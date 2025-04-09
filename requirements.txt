@@ -17,3 +17,5 @@ pandas
 tavily-python
 llama_parse
 langchain_mongodb
+yfinance
+langchain-tavily

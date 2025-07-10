@@ -1,6 +1,6 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-from langchain.agents import AgentExecutor,initialize_agent,AgentType
+from langchain.agents import initialize_agent,AgentType
 from langchain.callbacks import StreamlitCallbackHandler ##for communicating with agents
 import os
 from dotenv import load_dotenv
@@ -10,10 +10,8 @@ from langchain_mongodb import MongoDBAtlasVectorSearch
 from langchain.tools import Tool
 from yfinane import FinanceTool
 from langchain.callbacks.manager import CallbackManager
-from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-import json
-import pandas as pd
+
 load_dotenv()
 
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -24,6 +22,9 @@ llm = ChatGroq(
 os.environ['HUGGING_FACE_API_KEY']=os.getenv("HUGGING_FACE_API_KEY")
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 os.environ["TAVILY_API_KEY"]=os.getenv("TAVILY_API_KEY")
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_TRACING_V2"]="true"
+os.environ["LANGCHAIN_PROJECT"]="FinRAG"
 
 client = MongoClient(os.getenv("uri"), server_api=ServerApi('1'))
 db = client["Financial_RAG"]
@@ -70,12 +71,34 @@ agent=initialize_agent(
     tools=tools,
     agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
     verbose=True,
-    callbacks=[streamlit_handler],
+    callback_manager=callback_manager,
     return_intermediate_steps=True,
     max_iterations=3,
 )
 
+#I want that throught ui when user ask any query and click enter 
 
+
+def query_agent(user_input:str):
+    response=agent({"input":user_input})
+    steps=[]
+
+    for (action,obs) in response["intermediate_steps"]:
+        cleaned_obs=str(obs).replace("Thought","").replace("Observation","").strip()
+        steps.append({
+            "thought":action.log.strip(),
+            "action":action.tool,
+            "observation":cleaned_obs
+        })
+    return{
+        
+        "chain_of_thought":steps,
+        "final_answer":response["output"],
+    }
+
+
+
+"""
 st.title("FinRAG")
 query = st.text_input("Ask me about stocks, markets, or trends")
 
@@ -94,3 +117,5 @@ if st.button("Run"):
         st.write(" --- ")
     st.markdown("## Final Answer")
     st.write(response["output"])
+
+"""

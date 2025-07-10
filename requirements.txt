@@ -4,7 +4,6 @@ ipykernel
 langchain_community
 pypdf
 bs4
-python-dotenv
 langchain-openai
 sentence_transformers #in this the embedding technique is available
 langchain_huggingface
@@ -19,3 +18,5 @@ llama_parse
 langchain_mongodb
 yfinance
 langchain-tavily
+Flask
+plotly.express

@@ -1,0 +1,310 @@
+{"prompt":"Define EBITDA:","response":"Earnings Before Interest, Taxes, Depreciation, and Amortization — a measure of operating performance that removes non‑cash and financing effects to gauge cash earnings."}
+{"prompt":"Define gross margin:","response":"Gross margin is (revenue minus cost of goods sold) / revenue, showing production profitability."}
+{"prompt":"Define net income:","response":"Net income is total profit after all expenses, taxes, and costs have been subtracted from revenue."}
+{"prompt":"Define operating cash flow:","response":"The cash generated from core business operations, excluding investing and financing activities."}
+{"prompt":"Define free cash flow:","response":"Free cash flow is operating cash flow minus capital expenditures — cash available for reinvestment or distribution."}
+{"prompt":"Define working capital:","response":"Working capital equals current assets minus current liabilities, indicating short‑term liquidity."}
+{"prompt":"Define current ratio:","response":"Current ratio is current assets divided by current liabilities, assessing the ability to meet short‑term obligations."}
+{"prompt":"Define quick ratio:","response":"Quick ratio is (current assets minus inventory) divided by current liabilities — a stricter liquidity measure."}
+{"prompt":"Define debt‑to‑equity ratio:","response":"Debt‑to‑equity ratio is total liabilities divided by shareholders’ equity, measuring financial leverage."}
+{"prompt":"Define return on equity (ROE):","response":"ROE is net income divided by shareholders’ equity, indicating how efficiently equity is used to generate earnings."}
+{"prompt":"Define return on assets (ROA):","response":"ROA is net income divided by total assets, measuring how effectively assets generate profit."}
+{"prompt":"Define price‑to‑earnings ratio (P/E):","response":"P/E ratio is stock price divided by earnings per share — a valuation metric relative to earnings."}
+{"prompt":"Define price‑to‑book ratio (P/B):","response":"P/B ratio compares stock price to book value per share, indicating market valuation relative to net assets."}
+{"prompt":"Define price‑to‑sales ratio (P/S):","response":"P/S ratio is stock price divided by revenue per share — useful for valuing low‑profit firms."}
+{"prompt":"Define EV/EBITDA:","response":"Enterprise Value to EBITDA compares a company’s total value to its operating earnings."}
+{"prompt":"Define EV/Sales:","response":"EV/Sales is enterprise value divided by total revenue — measures valuation per dollar of sales."}
+{"prompt":"Define EV/FCF:","response":"EV/FCF is enterprise value divided by free cash flow — shows valuation relative to cash generation."}
+{"prompt":"Define capital expenditures (CapEx):","response":"CapEx refers to spending on acquiring or maintaining long‑term physical assets."}
+{"prompt":"Define depreciation:","response":"Depreciation allocates the cost of tangible assets over their useful life."}
+{"prompt":"Define amortization:","response":"Amortization spreads the cost of intangible assets, like patents or goodwill, over time."}
+{"prompt":"Define liquidity:","response":"Liquidity refers to how quickly assets can be converted into cash with minimal price impact."}
+{"prompt":"Define solvency:","response":"Solvency measures a company’s ability to meet long‑term obligations — a sign of financial stability."}
+{"prompt":"Define beta:","response":"Beta measures a stock’s volatility relative to the market — >1 means more volatile, <1 less."}
+{"prompt":"Define market capitalization:","response":"Market cap is total value of outstanding shares (stock price × number of shares)."}
+{"prompt":"Define dividend yield:","response":"Dividend yield is annual dividends per share divided by stock price — shows income return."}
+{"prompt":"Define gross profit:","response":"Gross profit is revenue minus cost of goods sold — basic measure of production profitability."}
+{"prompt":"Define net profit margin:","response":"Net profit margin is net income divided by revenue — indicates overall profitability."}
+{"prompt":"Define operating margin:","response":"Operating margin is operating income divided by revenue — shows core business efficiency."}
+{"prompt":"Define EBITDA margin:","response":"EBITDA margin is EBITDA divided by revenue — measures earnings relative to sales."}
+{"prompt":"Define interest coverage ratio:","response":"Interest coverage ratio is EBIT divided by interest expense — gauges ability to meet interest payments."}
+{"prompt":"Define debt service coverage ratio:","response":"DSCR is operating income divided by debt obligations — measures ability to service debt."}
+{"prompt":"Define quick assets:","response":"Quick assets are current assets minus inventory — the most liquid portion."}
+{"prompt":"Define capital gain:","response":"Capital gain is the profit made when selling an asset above its purchase price."}
+{"prompt":"Define capital loss:","response":"Capital loss is the loss incurred when an asset is sold below its purchase price."}
+{"prompt":"Define compound interest:","response":"Compound interest is interest earned on both principal and accumulated interest."}
+{"prompt":"Define simple interest:","response":"Simple interest is calculated only on the principal amount, not on accumulated interest."}
+{"prompt":"Define yield to maturity (YTM):","response":"YTM is the total return anticipated if a bond is held until maturity."}
+{"prompt":"Define current yield:","response":"Current yield is annual income from a bond divided by its current market price."}
+{"prompt":"Define coupon rate:","response":"Coupon rate is the bond’s annual interest payment as a percentage of its face value."}
+{"prompt":"Define duration (bond):","response":"Duration measures a bond’s sensitivity to interest rate changes in years."}
+{"prompt":"Define convexity (bond):","response":"Convexity is the rate of change of a bond’s duration — indicates price‑yield curvature."}
+{"prompt":"Define yield curve:","response":"Yield curve plots bond yields at different maturities — upward slope suggests growth expectations."}
+{"prompt":"Define credit rating:","response":"Credit rating assesses bond issuer’s ability to repay debt — AAA is highest quality."}
+{"prompt":"Define callable bond:","response":"Callable bond can be redeemed by issuer before maturity, often when rates fall."}
+{"prompt":"Define convertible bond:","response":"Convertible bond can be converted into a predetermined number of company shares."}
+{"prompt":"Define equity:","response":"Equity represents ownership interest — shareholders’ claim after liabilities are paid."}
+{"prompt":"Define asset:","response":"Asset is any resource owned by a company that can provide future economic benefits."}
+{"prompt":"Define liability:","response":"Liability is a present obligation of a company, to be settled via resources or services."}
+{"prompt":"Define shareholder equity:","response":"Shareholder equity is assets minus liabilities — the owners’ residual claim."}
+{"prompt":"Define inventory turnover:","response":"Inventory turnover is cost of goods sold divided by average inventory — measures efficiency."}
+{"prompt":"Define receivables turnover:","response":"Receivables turnover is net credit sales divided by average accounts receivable — indicates collection efficiency."}
+{"prompt":"Define days sales outstanding (DSO):","response":"DSO measures average days to collect receivables — lower is faster."}
+{"prompt":"Define return on investment (ROI):","response":"ROI is gain from investment divided by initial cost — measures profitability."}
+{"prompt":"Define internal rate of return (IRR):","response":"IRR is the discount rate that makes NPV of cash flows zero — used to evaluate projects."}
+{"prompt":"Define net present value (NPV):","response":"NPV is the sum of discounted cash flows minus initial investment — positive NPV is profitable."}
+{"prompt":"Define discount rate:","response":"Discount rate is rate used to convert future cash flows to present value."}
+{"prompt":"Define perpetuity:","response":"Perpetuity is a constant cash flow stream received indefinitely."}
+{"prompt":"Define annuity:","response":"Annuity is a series of equal payments at regular intervals for a set period."}
+{"prompt":"Define mortgage:","response":"Mortgage is a loan secured by real estate, repaid over time with interest."}
+{"prompt":"Define amortization schedule:","response":"Amortization schedule outlines periodic loan payments showing principal vs interest."}
+{"prompt":"Define balloon loan:","response":"Balloon loan has small regular payments and a large final lump‑sum payment."}
+{"prompt":"Define APR (annual percentage rate):","response":"APR is total annual cost of borrowing — includes interest and fees."}
+{"prompt":"Define APY (annual percentage yield):","response":"APY accounts for compounding interest — shows actual annual return."}
+{"prompt":"Define leverage:","response":"Leverage is using borrowed funds to amplify investment returns — increases both gain and risk."}
+{"prompt":"Define margin (investing):","response":"Margin is borrowing from a broker to buy more securities than cash allows."}
+{"prompt":"Define margin call:","response":"Margin call is demand for additional funds when account equity falls below maintenance level."}
+{"prompt":"Define short selling:","response":"Short selling is selling borrowed shares hoping price will fall to buy back cheaper."}
+{"prompt":"Define long position:","response":"Long position means owning a security expecting its price to rise."}
+{"prompt":"Define bearish:","response":"Bearish describes expectation that a security or market will decline."}
+{"prompt":"Define bullish:","response":"Bullish describes expectation that a security or market will rise."}
+{"prompt":"Define hedge:","response":"Hedge is an investment to reduce the risk of adverse price movements in an asset."}
+{"prompt":"Define derivatives:","response":"Derivatives are financial contracts whose value is derived from underlying assets."}
+{"prompt":"Define option:","response":"Option gives right, but not obligation, to buy (call) or sell (put) an asset at a set price."}
+{"prompt":"Define futures contract:","response":"Futures is agreement to buy or sell an asset at a predetermined price on a future date."}
+{"prompt":"Define forward contract:","response":"Forward is a customized contract to buy/sell an asset at a future date."}
+{"prompt":"Define swap (finance):","response":"Swap is agreement to exchange cash flows — e.g., interest rates or currencies."}
+{"prompt":"Define credit default swap (CDS):","response":"CDS is derivative that provides insurance against defaults on debt."}
+{"prompt":"Define hedge fund:","response":"Hedge fund is an investment fund that uses aggressive strategies like leverage and derivatives."}
+{"prompt":"Define mutual fund:","response":"Mutual fund pools investor money to buy a diversified portfolio managed professionally."}
+{"prompt":"Define ETF:","response":"Exchange‑traded fund (ETF) is a fund traded on exchanges like a stock."}
+{"prompt":"Define NAV (net asset value):","response":"NAV is total value of a fund's assets minus liabilities, divided by shares outstanding."}
+{"prompt":"Define portfolio:","response":"Portfolio is collection of investments held by an individual or institution."}
+{"prompt":"Define diversification:","response":"Diversification spreads investments across assets to reduce risk."}
+{"prompt":"Define systematic risk:","response":"Systematic risk is market-wide risk that cannot be diversified away."}
+{"prompt":"Define unsystematic risk:","response":"Unsystematic risk is asset-specific risk that can be mitigated by diversification."}
+{"prompt":"Define risk premium:","response":"Risk premium is extra return expected for taking on higher risk than risk‑free asset."}
+{"prompt":"Define volatility:","response":"Volatility is a statistical measure of dispersion of returns — higher means more variability."}
+{"prompt":"Define Sharpe ratio:","response":"Sharpe ratio is risk-adjusted return — (portfolio return minus risk-free rate) divided by volatility."}
+{"prompt":"Define alpha (finance):","response":"Alpha measures excess return above benchmark, adjusted for risk."}
+{"prompt":"Define beta (finance):","response":"Beta quantifies a portfolio or security’s sensitivity to market movements."}
+{"prompt":"Define tracking error:","response":"Tracking error measures deviation between fund return and benchmark return."}
+{"prompt":"Define yield:","response":"Yield is income return on investment — interest or dividends received."}
+{"prompt":"Define dividend payout ratio:","response":"Dividend payout ratio is dividends per share divided by earnings per share."}
+{"prompt":"Define retained earnings:","response":"Retained earnings are profits kept by company instead of paid out as dividends."}
+{"prompt":"Define book value per share:","response":"Book value per share is shareholder equity divided by shares outstanding."}
+{"prompt":"Define tangible book value:","response":"Tangible book value removes intangible assets from shareholder equity."}
+{"prompt":"Define goodwill:","response":"Goodwill is intangible asset arising when company acquires another for more than book value."}
+{"prompt":"Define intangible asset:","response":"Intangible asset is non-physical value, like patents, trademarks, or licenses."}
+{"prompt":"Define tangible asset:","response":"Tangible asset is physical resource with value — machinery, property, or inventory."}
+{"prompt":"Define cash flow statement:","response":"Cash flow statement shows inflows and outflows from operations, investing, and financing."}
+{"prompt":"Define income statement:","response":"Income statement (P&L) summarizes revenues, expenses, and net income over a period."}
+{"prompt":"Define balance sheet:","response":"Balance sheet is snapshot of assets, liabilities, and equity at a specific date."}
+{"prompt":"Define equity financing:","response":"Equity financing involves raising capital by selling shares to investors."}
+{"prompt":"Define debt financing:","response":"Debt financing involves borrowing funds that must be repaid with interest."}
+{"prompt":"Define IPO:","response":"Initial public offering — the first sale of a company's stock to the public."}
+{"prompt":"Define secondary offering:","response":"Secondary offering is when a company that already went public issues additional shares."}
+{"prompt":"Define insider trading:","response":"Insider trading is buying/selling based on non-public, material information — illegal."}
+{"prompt":"Define pink sheet stock:","response":"Pink sheet stocks are low-volume, OTC-traded securities with minimal regulation."}
+{"prompt":"Define penny stock:","response":"Penny stocks are low-priced, small-cap stocks, often highly speculative."}
+{"prompt":"Define moonlighting:","response":"Moonlighting is working an additional job outside primary employment, often after hours."}
+{"prompt":"Define Account Code:","response":"The first “A” in “FOAPAL” that describes the nature of expenditures and revenue in the Operating Ledger, as well as assets and liabilities in the General Ledger. Listing is available on ePrint."}
+{"prompt":"Define Accounts Payable Accruals:","response":"Amounts to be paid to external parties for goods and services rendered in the current year."}
+{"prompt":"Define Accounts Receivable:","response":"Amounts due from external parties for goods or services rendered in the current year."}
+{"prompt":"Define Accrual Accounting Method:","response":"A method that reports revenue when earned and expenses when incurred. At year‑end, revenues or expenses not yet posted may be journalized and reversed in the new year to avoid double counting."}
+{"prompt":"Define Activity Code:","response":"The second “A” in “FOAPAL” that describes an activity group of revenues and expenditures. For example, a course in Continuing Studies. Activity Code cannot be used for Budgets. Listing is available on ePrint."}
+{"prompt":"Define Actuals:","response":"Real revenues, salaries, expenditures, or transfers that have been posted to a fund. Also known as Year‑To‑Date Activity."}
+{"prompt":"Define Adjusted Budget:","response":"Adopted Budget plus all budget adjustments (permanent and temporary), also called Current Budget."}
+{"prompt":"Define Adopted Budget:","response":"Original budget approved by the Budget Office (always permanent). It establishes the available resources for the specified year. (Document type – BD01)."}
+{"prompt":"Define Advance:","response":"A transfer of moneys for which an accounting must be rendered at some later date."}
+{"prompt":"Define Agency Funds:","response":"Resources held by the institution as custodian or agent for students, faculty or staff, and organizations. Reported as a liability—no flow through of revenues/expenses."}
+{"prompt":"Define Amortization:","response":"The process of allocating the cost of an intangible asset over the periods it benefits."}
+{"prompt":"Define Amortization Schedule:","response":"A table of prospective payments or write‑downs relating to an obligation, covering both principal and, when applicable, interest for each payment."}
+{"prompt":"Define Annuity Funds:","response":"Resources invested or available for investment to produce income paid to named beneficiaries, along with partial return of principal. Remaining principal may be used by the institution upon the beneficiaries’ deaths."}
+{"prompt":"Define Asset:","response":"A tangible or intangible item that has a positive value to the University—for example, cash, receivables, a building, equipment, or investments. An asset account should normally have a debit balance."}
+{"prompt":"Define Auxiliary:","response":"An entity that exists to furnish a service to students, faculty, or staff and charges a fee directly related to, although not necessarily equal to, the cost of the service; managed as essentially self‑supporting."}
+{"prompt":"Define Available Balance:","response":"Adjusted Budget minus Year‑To‑Date Activity minus Commitments; also known as Budget Balance Available (BBA), or the amount available to spend."}
+{"prompt":"Define Balance Sheet:","response":"A report of financial status at a specific time showing assets, liabilities, and fund balances of an entity."}
+{"prompt":"Define Banner Finance:","response":"Web‑based software used to record financial transactions."}
+{"prompt":"Define Bequest:","response":"A gift given to the University at the time of a person’s death as set forth in the individual’s last will and testament."}
+{"prompt":"Define Budget:","response":"A financial plan serving as an estimate and a management tool for future operations."}
+{"prompt":"Define Budget Adjustments:","response":"Changes to the Original Budget. These may be permanent (document type BD02) or temporary (document types BD04 or BD14)."}
+{"prompt":"Define C&G funds:","response":"Contracts and Grants funds."}
+{"prompt":"Define Capital Asset:","response":"An asset intended for long‑term, continued use or possession, such as land, buildings and equipment. Also known as a fixed asset or capital addition."}
+{"prompt":"Define Capitalization Policy:","response":"A statement of criteria to determine which expenditures will be expensed and which will be recorded as capital assets, including when an expenditure increases the value of a fixed asset for future benefit."}
+{"prompt":"Define Capitalize:","response":"To record in plant accounts the value of equipment purchases that should be recorded as capital assets, and carry forward expenditures that benefit future periods; to add to a fixed‑asset account plant additions or improvements."}
+{"prompt":"Define Chart of Accounts:","response":"Blueprint of financial structure. For Banner purposes, the chart represents the entity (e.g., A = University of Alabama, C = Capstone Foundation, etc.)."}
+{"prompt":"Define COGNOS:","response":"Third party software used to load annual salaries and original budget (permanent budgets)."}
+{"prompt":"Define Commitment:","response":"The sum of all reservations (requisitions) and encumbrances (purchase orders, general and labor encumbrances)."}
+{"prompt":"Define Construction in Progress:","response":"Accumulated value of expenditures for a capital asset that is incomplete at the end of the accounting period."}
+{"prompt":"Define Credit:","response":"An accounting entry that is either: addition to a liability account; revenues; deduction from an asset account; or reduction of expenses."}
+{"prompt":"Define Credit Memo:","response":"The credit memo resembles a Vendor Invoice except that the gross amount is a credit to the University, not a debit."}
+{"prompt":"Define Current Funds:","response":"Economic resources of an institution expended for primary and supporting missions, used for general operating purposes and spent in the near term."}
+{"prompt":"Define Data Enterable Code:","response":"A code against which transactions may be posted. Non-data-enterable codes are for summarizing information and cannot have postings associated with them."}
+{"prompt":"Define Debt Service:","response":"Payment of interest and matured principal; the outlay needed or accrued for meeting such payments during an accounting period."}
+{"prompt":"Define Debit:","response":"An accounting entry that is either: an addition to an asset account; an expense; a deduction from a liability account; or a reduction of revenue."}
+{"prompt":"Define Defaults (in chart of accounts):","response":"A shortcut to minimize data entry; for example, entering a FUND code will often auto-populate recommended ORGN and PROG codes."}
+{"prompt":"Define Deferred Revenues:","response":"Receipt of funds in advance of the accounting period in which the revenue will be earned."}
+{"prompt":"Define Deficit:","response":"Also known as overdraft. A negative balance (less than $0.00). Budget deficits occur when expenses and commitments exceed available budget."}
+{"prompt":"Define Depreciation:","response":"The method by which the cost of a capital asset is matched against the revenue generated by it—allocating the cost over its useful life as annual expense."}
+{"prompt":"Define Designated Resources:","response":"Internally imposed requirements created by the governing board on unrestricted net assets."}
+{"prompt":"Define Document Number:","response":"A unique number sequentially assigned to every online document in process, also known as document code."}
+{"prompt":"Define Document Type:","response":"A further breakdown of types within a document coding scheme; also known as rule code."}
+{"prompt":"Define Donor:","response":"An individual or entity that makes a contribution."}
+{"prompt":"Define E&G (Educational & General Funds):","response":"Funds that are unrestricted and used for general educational and operational purposes."}
+{"prompt":"Define Encumbrance:","response":"An anticipated expenditure evidenced by a contract or purchase order; a commitment."}
+{"prompt":"Define Encumbrance Ledger:","response":"The set of books against which details for all original, adjusted or liquidated encumbered and reserved amounts are recorded."}
+{"prompt":"Define Endowment:","response":"Funds invested to produce income for current use. The income may or may not be restricted. See Endowment Accounting Manual for details."}
+{"prompt":"Define Eprint:","response":"Web-based Repository of financial data."}
+{"prompt":"Define Expenditure:","response":"The cost of goods delivered or services rendered, whether paid or accrued, including expenses, debt service, and capital outlays."}
+{"prompt":"Define Expense:","response":"Charges incurred, whether paid or accrued, for operation, maintenance, interest and other costs that benefit the current fiscal period."}
+{"prompt":"Define FASB:","response":"Financial Accounting Standards Board. It sets accounting and reporting standards for private sector commercial and non-profit entities."}
+{"prompt": "Define Financial Manager:", "response": "The individual responsible and accountable for the Fund or Organization Code."}
+{"prompt": "Define Financial Statements:", "response": "A set of reports including a Statement of Net Assets, Statement of Revenues, Expenditures, and Changes in Net Assets, Statement of Cash Flows, and explanatory notes; issued annually."}
+{"prompt": "Define Fiscal Period:", "response": "A month within the fiscal year. Codes 01–12 represent October through September, and 14 represents the year-end accrual period."}
+{"prompt": "Define Fiscal Year:", "response": "A 12‑month accounting cycle. At this university it runs from October 1 through September 30 (e.g., FY Code 10 is Oct 1, 2009–Sep 30, 2010)."}
+{"prompt": "Define FOAPAL:", "response": "An acronym representing the six elements of the chart of accounts: Fund, Organization, Account, Program, Activity, and Location."}
+{"prompt": "Define Functional (Program Code):", "response": "A classification of expenses focused on institutional programs or objectives (e.g., instruction, research, public service)."}
+{"prompt": "Define Fund:", "response": "A self‑balancing separate group of accounts consisting of assets, liabilities, and equity accounts."}
+{"prompt": "Define Fund Code:", "response": "The “F” in FOAPAL—it defines the source of money and any restrictions imposed by the contributor."}
+{"prompt": "Define GAAP:", "response": "Generally Accepted Accounting Principles: standard guidelines for preparing financial statements, including recognition, measurement, and presentation."}
+{"prompt": "Define GASB:", "response": "Governmental Accounting Standards Board: sets accounting and financial reporting standards for state/local government entities, including public universities."}
+{"prompt": "Define General Ledger:", "response": "The set of books against which assets, liabilities, and fund balances are recorded; constitutes the basis for the annual Statement of Net Assets."}
+{"prompt": "Define Gift:", "response": "A donation provided voluntarily by a donor, receiving nothing of significant value in return; may be cash, securities, assets, etc., and can be unrestricted or restricted."}
+{"prompt": "Define Grant:", "response": "Resources provided—usually by a federal or state agency—to advance knowledge or research. Typically requires a report back to the granting agency."}
+{"prompt": "Define Grant Ledger:", "response": "The set of books that records revenue, expense, and transfers for funds linked to grants, supporting inception‑to‑date reporting."}
+{"prompt": "Define Granting Agency:", "response": "An entity that provides support—such as money or equipment—for a project."}
+{"prompt": "Define Hierarchy (FOAPAL):", "response": "Each FOAPAL element has its own hierarchy: data‑enterable lowest level and roll‑up summary codes above it."}
+{"prompt": "Define Inception-to-Date (ITD):", "response": "A running total of activity in a fund since the grant was established, spanning multiple years outside the university’s fiscal year."}
+{"prompt": "Define Indirect Cost Recovery:", "response": "The charge to a grant or contract to reimburse the university for a share of indirect (overhead) costs."}
+{"prompt": "Define Indirect Costs (Overhead):", "response": "Costs that cannot be easily identified with primary functions such as instruction or research. They support those functions indirectly."}
+{"prompt": "Define Inter-Fund:", "response": "Refers to transactions or transfers between different funds."}
+{"prompt": "Define Internal Sales:", "response": "Sales of goods and services from one university unit to another, also known as recovery."}
+{"prompt": "Define Intra-Fund:", "response": "Transactions or transfers that occur within a single fund."}
+{"prompt": "Define Investment:", "response": "An exchange of cash for a less-liquid asset expected to increase in value, such as stocks, bonds, real estate."}
+{"prompt": "Define Investment Pool:", "response": "A collection of endowment or other resources commingled for asset management and accounting purposes."}
+{"prompt":"Define Labor Distribution:","response":"The allocation of an employee’s salary and wages to appropriate University accounts to reflect the effort of that employee."}
+{"prompt":"Define Ledger:","response":"A “set of books” against which financial transactions are posted."}
+{"prompt":"Define Liability:","response":"Obligations of the University to transfer assets or provide services to other parties in the future as a result of past transactions or events."}
+{"prompt":"Define Location Code:","response":"The “L” in FOAPAL—an optional element describing the physical whereabouts of financial transactions, used to track fixed assets."}
+{"prompt":"Define Mechanicals:","response":"Automated procedures that run at month-end, recording routine journal or budget entries more efficiently."}
+{"prompt":"Define Month-end:","response":"The monthly process to close the operating and general ledger; once closed, no transactions can be recorded for that period."}
+{"prompt":"Define Necessary and Reasonable Expense:","response":"An expense with a clear business reason and cost that is not excessive."}
+{"prompt":"Define NSF:","response":"Non-sufficient funds: actual expenses and commitments exceed the budgeted amount."}
+{"prompt":"Define NSF queue:","response":"A routing queue for requisitions and purchase orders when there is not enough budget; such items are usually disapproved."}
+{"prompt":"Define O&M (Operations & Maintenance):","response":"Also referred to as state funds—Funds 11000 – 11011, used for basic operational purposes."}
+{"prompt":"Define Operating Funds:","response":"Resources provided from the central University budget (state appropriations, tuition/fees), pooled and allocated via budgeted amounts."}
+{"prompt":"Define Operating Ledger:","response":"The set of books against which revenue, expense, and transfers are recorded; it closes into the General Ledger each October 1."}
+{"prompt":"Define Organization Code:","response":"The “O” in FOAPAL that defines the departmental entities or budgetary units responsible for financial activity."}
+{"prompt":"Define Overhead:","response":"Indirect costs that support primary functions but cannot be easily identified with them."}
+{"prompt":"Define PCard:","response":"Procurement Card: a University-issued credit card for authorized purchases up to specified amounts."}
+{"prompt":"Define Permanent Budget:","response":"Also known as the Original or Adopted Budget, it establishes the available resources for the fiscal year."}
+{"prompt":"Define Pledge:","response":"An intent or promise to give. Only unconditional pledges are reported as assets on financial statements."}
+{"prompt":"Define Position Budgeting:","response":"A budgeting method where each position (except grant funds) has an associated budget, broken down by permanent vs temporary."}
+{"prompt":"Define Position Numbers:","response":"Unique identifiers for budgeted positions, including regular, pooled, student, and supplementary roles."}
+{"prompt":"Define Posted:","response":"Refers to a transaction that has been completed, approved, and added to the ledger, making it final and unalterable."}
+{"prompt":"Define Prepaid Expense:","response":"Expenses paid in a fiscal year that relate to operations of a future fiscal year."}
+{"prompt":"Define Principal Investigator:","response":"The individual identified in a sponsored agreement who will lead the project's activity (also referred to as PI)."}
+{"prompt":"Define Program Code:","response":"The “P” in FOAPAL that defines the functional area in which funds are being spent."}
+{"prompt":"Define Research Contract:","response":"Research for which there is an expected deliverable or outcome."}
+{"prompt":"Define Research Grant:","response":"Grants are contributions for which no deliverable is expected; they advance knowledge without obligation to deliver a product."}
+{"prompt":"Define Reservation:","response":"Budget reservation—the setting aside of budgets generated by purchase requisitions; included in total commitments."}
+{"prompt":"Define Restricted Funds:","response":"Funds provided by a contribution with stipulations imposed by an external contributor, sponsor, or donor."}
+{"prompt":"Define Restrictions:","response":"Stipulations imposed that specify how resources must be used."}
+{"prompt":"Define Revenue:","response":"Additions to assets that don’t increase liabilities, recover expenditures, or represent transfers between funds—for example, tuition, external sales, or investment earnings."}
+{"prompt":"Define Rule Code:","response":"A document type identifier used in Banner to specify the type of transaction recorded."}
+{"prompt":"Define Sponsor:","response":"An entity that funds a project, usually research-related."}
+{"prompt":"Define Sponsored Research:","response":"An arrangement (e.g., grant, contract, cooperative agreement) whereby the University performs a scope of work under specified terms for financial compensation."}
+{"prompt":"Define Temporary Budget:","response":"Budgets applicable only to the current year."}
+{"prompt":"Define Transaction:","response":"Any event that involves an exchange of funds between two parties—examples include paying a vendor, payroll, student fees, or interdepartmental charges."}
+{"prompt":"Define Transfer:","response":"Movement of resources from one account to another with no intention of repayment."}
+{"prompt":"Define UASPEF:","response":"University of Alabama System Pooled Endowment Fund—all endowments not separately required by donors are held and invested by the System Office under board oversight."}
+{"prompt":"Define Unearned Revenue:","response":"Revenue collected in advance of delivering a good or service."}
+{"prompt":"Define Unexpended Plant:","response":"Resources identified and formally committed to capital asset construction or acquisition that remain unspent at reporting date."}
+{"prompt":"Define Unrestricted Funds:","response":"Funds not subject to external limitations and therefore available for operations in current or future periods."}
+{"prompt":"Define Vendor:","response":"Any business or individual paid through Accounts Payable."}
+{"prompt":"Define WORKS:","response":"Online service used to approve and reconcile PCard purchases and generate reports."}
+{"prompt":"Define Year-end:","response":"The time and process of closing the University’s operating cycle; fiscal year-end is September 30, involving closing records, audits, and annual reporting."}
+{"prompt":"Define Year-end Cutoff Reports:","response":"Frozen reports generated at key cutoff dates (e.g., Oct 1, mid‑Oct, April/May) during the year‑end closing process."}
+{"prompt":"Define Year-to-Date (YTD):","response":"Also referred to as YTD Actuals or YTD Totals—cumulative revenues, salaries, expenditures, or transfers posted since the start of the fiscal year (Oct 1)."}
+{"prompt":"Define Asset:","response":"An asset is a resource—tangible or intangible—with economic value controlled by an individual, company, or country and expected to provide future benefits (e.g., a power plant, cash, shares, or patents)."}
+{"prompt":"Define Balance Sheet:","response":"A balance sheet is a financial statement summarizing a company’s assets, liabilities, and shareholders’ equity at a specific point in time—typically the end of the financial year—showing what the company owns and owes."}
+{"prompt":"Define Bond:","response":"A bond is a debt instrument issued by corporations or governments that pays interest over a defined period and repays the principal at maturity. Unlike loans, bonds are typically repaid only at maturity and can be traded on exchanges."}
+{"prompt":"Define BOO / BOOT:","response":"BOO (Build‑Own‑Operate) or BOOT (Build‑Own‑Operate‑Transfer) is a project finance model where an entity builds, owns, and operates a facility during an agreed period and, in BOOT, transfers it to the government at the end."}
+{"prompt":"Define Book Value:","response":"Book value is the net value of a company’s assets as shown on its balance sheet. It represents the approximate amount shareholders would receive if the company were liquidated."}
+{"prompt":"Define Break‑Even Analysis:","response":"Break‑even analysis calculates the margin of safety—the amount revenues can fall before hitting the break‑even point, where total revenues equal total costs."}
+{"prompt":"Define Capital Budgeting:","response":"Capital budgeting is the process businesses use to evaluate potential major projects or investments to determine their value and feasibility."}
+{"prompt":"Define Capital Expenditure (CAPEX):","response":"Capital expenditure (CAPEX) refers to funds used by a company to acquire, upgrade, or maintain physical assets such as buildings or equipment. CAPEX must be capitalized."}
+{"prompt":"Define Capitalise:","response":"To capitalise means recording an expense as an asset on the balance sheet and writing it off over the asset’s useful life through depreciation."}
+{"prompt":"Define Cash Flow Statement:","response":"The cash flow statement is a financial report summarizing all cash inflows and outflows from operations, investing, and financing activities over an accounting period."}
+{"prompt":"Define Cash Flow Available for Debt Service (CFADS):","response":"CFADS measures the cash a company has available in a year to repay debt—calculated as revenues minus capital/operating expenditures and taxes."}
+{"prompt":"Define Catalytic Capital:","response":"Catalytic capital is investment (debt, equity, guarantees) where the investor accepts lower financial returns to achieve greater social or environmental impact."}
+{"prompt":"Define Consumer Contribution:","response":"A consumer contribution is a financial input by consumers (e.g., industrial customers), often to a project in exchange for benefits like preferential pricing."}
+{"prompt":"Define Consumer Deposit:","response":"A consumer deposit is money paid by consumers in advance—such as for a utility meter or service connection."}
+{"prompt":"Define Corporate Financing (Balance Sheet Financing):","response":"Under corporate financing, a public or private corporation undertakes investment on its own balance sheet with full recourse, unlike project financing which is structured around a specific asset."}
+{"prompt":"Define Cost of Capital:","response":"Cost of capital includes both debt and equity costs and is used as the discount rate in valuation models, such as weighted average cost of capital (WACC)."}
+{"prompt":"Define Creditor:","response":"A creditor is an individual or institution that lends money or extends credit, expecting repayment in the future."}
+{"prompt":"Define Current Assets:","response":"Current assets are resources that can be converted into cash within one year."}
+{"prompt":"Define Current Liabilities:","response":"Current liabilities are obligations or debts due to be settled within one year."}
+{"prompt":"Define Current Maturity:","response":"Current maturity is the time remaining between today and a bond’s maturity date when principal must be repaid."}
+{"prompt":"Define Debt (Loan):","response":"Debt, or a loan, is money borrowed by one party from another, typically with the obligation to repay principal and interest."}
+{"prompt":"Define Debt Service Coverage Ratio (DSCR):","response":"DSCR is a liquidity ratio that measures a project’s ability to generate sufficient cash flow to cover interest and principal repayments after operating expenses and taxes."}
+{"prompt":"Define Debt to Equity Ratio (DER):","response":"DER is the ratio of total debt to shareholders’ equity, indicating a company’s financial leverage."}
+{"prompt":"Define Depreciation:","response":"Depreciation is the method of allocating the cost of tangible assets over their useful lives for accounting and tax purposes."}
+{"prompt":"Define Derivative:","response":"A derivative is a financial contract whose value is based on an underlying asset or benchmark, such as swaps, futures, or options."}
+{"prompt":"Define Discounted Cash Flow (DCF):","response":"DCF is a valuation method estimating the value of an investment by discounting future cash flows to present value using a discount rate. Sources: :contentReference[oaicite:1]{index=1}"}
+{"prompt":"Define Discounting:","response":"Discounting is determining the present value of future payments by applying the time value of money."}
+{"prompt":"Define Discount Rate:","response":"A discount rate is the interest rate used to compute present value, often equal to a project’s cost of capital."}
+{"prompt":"Define Dividend:","response":"A dividend is a distribution of profits paid by a corporation to its shareholders."}
+{"prompt":"Define EBITDA:","response":"EBITDA stands for Earnings Before Interest, Taxes, Depreciation, and Amortization; it allows comparison of profitability across companies by excluding financing and accounting effects."}
+{"prompt":"Define Equity:","response":"Equity represents ownership in an asset after debt is subtracted; shareholders invest equity into projects."}
+{"prompt":"Define Exchange Rate:","response":"The exchange rate is the price at which one currency can be exchanged for another."}
+{"prompt":"Define Exchange Rate Risk:","response":"Exchange rate risk is the financial risk that arises from fluctuations in currency exchange rates, affecting cross-border income or loans."}
+{"prompt":"Define Expenditures (Expenses):","response":"Expenditures are the costs a business incurs through operations to generate revenue, including capital expenditures."}
+{"prompt":"Define Export Credit Agency (ECA):","response":"An ECA is a quasi‑governmental institution that provides credit, insurance, or guarantees to support national exporters."}
+{"prompt":"Define Fixed Assets (PP&E):","response":"Fixed assets are physical or capital assets—land, buildings, equipment—used in operations that cannot be easily converted to cash."}
+{"prompt":"Define Fixed Income:","response":"Fixed income refers to investments paying fixed periodic payments, like bonds."}
+{"prompt":"Define Future Value (FV):","response":"Future value is the worth of an investment at a specific date, based on an expected rate of return."}
+{"prompt":"Define Gearing:","response":"Gearing (see leverage) is the use of debt to increase a company’s financial leverage."}
+{"prompt":"Define Gross Fixed Assets:","response":"Gross fixed assets are the total cost originally paid for fixed assets, before subtracting depreciation."}
+{"prompt":"Define Hybrid Financing:","response":"Hybrid financing has characteristics of both equity and debt—e.g., convertible bonds."}
+{"prompt":"Define Income:","response":"Income is net profit remaining after deducting expenses from revenue."}
+{"prompt":"Define Independent Power Producer (IPP):","response":"An IPP is a non-utility entity that generates and sells power to utilities or end-users."}
+{"prompt":"Define Income Statement:","response":"An income statement, or P&L statement, reports performance over a period, detailing revenues, expenses (including depreciation), and net income."}
+{"prompt":"Define Inflation:","response":"Inflation is the decline in purchasing power of a currency over time."}
+{"prompt":"Define Interest Rate:","response":"Interest rate is the cost of borrowing money, expressed as a percentage of principal."}
+{"prompt":"Define Internal Rate of Return (IRR):","response":"IRR is the discount rate that makes an investment’s net present value equal to zero—the expected annualized rate of return. Sources: :contentReference[oaicite:2]{index=2}"}
+{"prompt":"Define Investor:","response":"An investor is someone who takes a stake in a business, bearing risk and sharing profits and losses."}
+{"prompt":"Define LCOE (Levelised Cost of Electricity):","response":"LCOE is the average revenue per unit of electricity needed to recover all investment and operating costs over the project’s life."}
+{"prompt":"Define Lender:","response":"A lender is a financial institution that provides funds to a borrower, expecting repayment with interest and/or fees."}
+{"prompt":"Define Leverage:","response":"Leverage means using debt to finance investments and also refers to the debt‑to‑equity ratio."}
+{"prompt":"Define Liability:","response":"Liabilities are obligations owed by a company resulting from past transactions and reported on the balance sheet."}
+{"prompt":"Define Liquidity:","response":"Liquidity is the ability to meet short‑term obligations or convert assets to cash within one year."}
+{"prompt":"Define Loan:","response":"A loan is borrowed money that must be repaid; see also debt."}
+{"prompt":"Define Maturity:","response":"Maturity is the date when a financial obligation, like a loan or bond, is due for repayment."}
+{"prompt":"Define Multilateral Development Bank (MDB):","response":"An MDB is an international financial institution created to promote economic development."}
+{"prompt":"Define Net Present Value (NPV):","response":"NPV is the sum of all future cash inflows and outflows, discounted to present value to evaluate investment profitability."}
+{"prompt":"Define Offtaker:","response":"An offtaker is the party that agrees to purchase the output or services produced by a project (e.g., electricity), under a binding offtake agreement."}
+{"prompt":"Define Preferred Share:","response":"Preferred shares are a class of stock that pay fixed dividends and have priority over common shares on dividends and liquidations. They combine features of debt and equity and usually lack voting rights."}
+{"prompt":"Define Project Financing:","response":"Project financing is a structure where loans and equity are repaid solely from the project’s cash flows. The lender only has recourse to the project’s assets and revenue—not the sponsor’s balance sheet."}
+{"prompt":"Define Present Value (PV):","response":"Present value is the current value of a future cash flow stream discounted back at a specified discount rate."}
+{"prompt":"Define Principal:","response":"Principal refers to the original amount of money borrowed in a loan or invested in an asset."}
+{"prompt":"Define Receivables:","response":"Receivables are amounts owed to a company for goods or services delivered but not yet paid for."}
+{"prompt":"Define Recourse vs Non‑Recourse:","response":"Recourse finance allows lenders to claim borrower’s other assets if the project fails. Non-recourse finance limits repayment to project assets and revenue only."}
+{"prompt":"Define Revenue (Gross Income):","response":"Revenue is the total amount of money a company earns from its primary operations before any costs or deductions."}
+{"prompt":"Define Retained Earnings:","response":"Retained earnings are accumulated profits not distributed as dividends but reinvested in the company or used to pay debt."}
+{"prompt":"Define Return on Equity (ROE):","response":"ROE is net income divided by shareholders’ equity. It measures how profitably a company uses its equity capital."}
+{"prompt":"Define Return on Revenue (ROR):","response":"ROR is net income divided by total revenue. It measures profitability relative to sales."}
+{"prompt":"Define Royalty:","response":"A royalty is a payment made for use of property—such as patents, natural resources, or copyrighted content—typically based on usage or revenue."}
+{"prompt":"Define Security:","response":"A security is a tradable financial asset like stocks, bonds, or derivatives that represents ownership or creditor relationships."}
+{"prompt":"Define Sensitivity Analysis:","response":"Sensitivity analysis examines how changes in an input (e.g. cost or revenue) impact an output (e.g. project NPV) under various assumptions."}
+{"prompt":"Define Shareholder:","response":"A shareholder (or stockholder) owns one or more shares of a company, giving them ownership rights but generally limited liability."}
+{"prompt":"Define Short-term Deposit:","response":"A short‑term deposit is money placed in a bank for no longer than one year, earning interest until maturity."}
+{"prompt":"Define Solvency:","response":"Solvency is a company’s ability to meet long‑term obligations and continue operations into the future."}
+{"prompt":"Define Special Purpose Vehicle (SPV):","response":"An SPV is a subsidiary created for a specific project, commonly used in project financing to isolate risk."}
+{"prompt":"Define Standby Credit Facility:","response":"A standby credit facility is a line of credit the borrower can draw on in emergencies or short-term cash needs."}
+{"prompt":"Define Subordinated Debt:","response":"Subordinated debt ranks below senior debt in repayment priority. In default, junior lenders are repaid only after senior ones."}
+{"prompt":"Define Weighted Average Cost of Capital (WACC):","response":"WACC is the average cost of a company’s financing (debt and equity), weighted by each component’s proportion in the capital structure."}
+{"prompt":"Define Working Capital:","response":"Working capital is the difference between current assets and current liabilities, indicating short‑term operational liquidity."}
+{"prompt":"Define Work in Progress (WIP):","response":"Work in progress refers to partially completed goods or services that are still in production and not yet sold."}
+

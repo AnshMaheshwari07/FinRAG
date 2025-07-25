@@ -1,0 +1,58 @@
+/* Reset some base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f7f8fc, #dbe2ef);
+  color: #333;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 3rem;
+  color: #112D4E;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #3F72AF;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  background-color: #3F72AF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  min-width: 250px;
+}
+
+.nav-button:hover {
+  background-color: #112D4E;
+  transform: scale(1.05);
+}
